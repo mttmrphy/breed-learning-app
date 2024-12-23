@@ -297,6 +297,7 @@ function QuizMode({ breeds, onExitQuiz }) {
   const [quizQuestions, setQuizQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [score, setScore] = useState(0); 
   const [showResults, setShowResults] = useState(false);
 
   useEffect(() => {
