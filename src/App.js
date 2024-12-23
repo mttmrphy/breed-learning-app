@@ -411,13 +411,9 @@ export default function BreedLearningApp() {
   const [mode, setMode] = useState('study');
 
   const handleNextBreed = () => {
-    if (currentBreedIndex < breeds.length - 1) {
-      setCurrentBreedIndex(currentBreedIndex + 1);
-      setShowAnswer(false);
-    } else {
-      setCurrentBreedIndex(0);
-      setShowAnswer(false);
-    }
+    const nextIndex = Math.floor(Math.random() * breeds.length);
+    setCurrentBreedIndex(nextIndex);
+    setShowAnswer(false);
   };
 
   const handleReveal = () => {
