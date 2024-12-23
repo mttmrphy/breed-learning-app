@@ -406,7 +406,7 @@ function QuizMode({ breeds, onExitQuiz }) {
 }
 
 export default function BreedLearningApp() {
-  const [currentBreedIndex, setCurrentBreedIndex] = useState(0);
+  const [currentBreedIndex, setCurrentBreedIndex] = useState(Math.floor(Math.random() * breeds.length));
   const [showAnswer, setShowAnswer] = useState(false);
   const [mode, setMode] = useState('study');
 
