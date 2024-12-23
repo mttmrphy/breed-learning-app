@@ -297,7 +297,6 @@ function QuizMode({ breeds, onExitQuiz }) {
   const [quizQuestions, setQuizQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
-  const [score, setScore] = useState(0);
   const [showResults, setShowResults] = useState(false);
 
   useEffect(() => {
@@ -456,7 +455,6 @@ export default function BreedLearningApp() {
                       Quiz Mode
                     </button>
                   </div>
-                  {mode === 'study' && <p className="text-sm text-gray-500">Score: {score}</p>}
                 </div>
 
                 {mode === 'quiz' ? (
